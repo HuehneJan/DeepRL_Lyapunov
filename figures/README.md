@@ -1,4 +1,3 @@
-
-<img src=average_loss.jpg>
+![Average Critic Loss](average_loss.jpg)
 
 
