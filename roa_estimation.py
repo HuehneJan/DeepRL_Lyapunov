@@ -104,18 +104,18 @@ if __name__ == "__main__":
     xa = np.reshape(a, newshape=(-1, 1))
     xb = np.reshape(b, newshape=(-1, 1))
     states = np.concatenate((xa, xb), axis=1).astype(np.float32)
-    #states = np.array([[0.22940193, 1.05789482]]).astype(np.float32)
+
     del xa, xb
     states = torch.from_numpy(states)
     actor = Controller(state_dim=2, action_dim=1, max_action=args.max_action).to(device)
     actor.load_state_dict(torch.load(args.model_dir + "/nonlinear_controller.pt"))
-    #actor = linear_controller
+
     sim = Environment_Sim(mass=args.mass, length=args.length, max_torque=args.max_action)
     st, cst = sim.calc_trajectories(start_states=states, actor=actor, steps=500)
     st = torch.pow(st, 2)
     st = torch.sum(st, 1)
     st = torch.sqrt(st)
-    test = torch.where(st < 1e-5, 1, 0)
+    test = torch.where(st < 1e-3, 1, 0)
     print(torch.sum(test).item())
     print(torch.mean(cst))
 
