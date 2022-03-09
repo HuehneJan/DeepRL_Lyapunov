@@ -1,4 +1,4 @@
 
-<img src=average_loss.jpeg>
+<img src=average_loss.jpg>
 
 
