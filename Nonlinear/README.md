@@ -1,1 +1,1 @@
-# Code for "Nonlinear System Analysis Chapter" Chapter
+# Code for "Nonlinear System Analysis" Chapter
