@@ -1,7 +1,7 @@
 # Code for "Analysis of Deep Reinforcement Learning Algorithms Applied to Linear Systems" Chapter
 
 
-* Exectute [experiments.sh](./exerperiments.sh) to run the experiments of the chapter. 
+* Execute [experiments.sh](./exerperiments.sh) to run the experiments of the chapter. 
 * Note: The required packages need to be installed in order to run the experiments. Furthermore, the data creation will need sufficient free disk space. 
 * Data will be stored in a folder ./data/run_name directory for every run
 * Running loggs will be stored in ./loggs
