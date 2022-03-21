@@ -45,7 +45,7 @@ if __name__ == "__main__":
     plt.ylabel(r"difference to optimal LQR value")
     plt.legend()
     plt.savefig(project_dir + "/optimal_difference.eps", format="eps")
-    plt.show()
+    #plt.show()
     plt.clf()
 
     plt.locator_params(integer=True)
@@ -55,7 +55,7 @@ if __name__ == "__main__":
     plt.legend()
     plt.grid()
     plt.savefig(project_dir + "/absolute_e1.eps", format="eps")
-    plt.show()
+    #plt.show()
     plt.clf()
 
     plt.locator_params(integer=True)
@@ -65,7 +65,7 @@ if __name__ == "__main__":
     plt.legend()
     plt.grid()
     plt.savefig(project_dir + "/absolute_e2.eps", format="eps")
-    plt.show()
+    #plt.show()
     plt.clf()
 
 
