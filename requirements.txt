@@ -1,0 +1,5 @@
+matplotlib==3.4.3
+numpy==1.21.2
+tensorboard==2.6.0
+gym==0.21.0
+pytorch==1.10.0
