@@ -5,4 +5,5 @@
 * Running loggs will be stored in ./loggs
   1. the directory contains a progress_information.txt file that indicated the experiments progress
   2. for every run a run_name.txt file contains the running output information created during that run
+* A Tensorboard directory ./tensorboard_runs will be created and can be called to monitor run progress
 * Plotts will automatlically be created for every run and stored in the same folder
