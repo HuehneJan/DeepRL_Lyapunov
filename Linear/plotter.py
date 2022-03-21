@@ -4,8 +4,8 @@ import argparse
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--save_dir", type=str, default="DDPG_TEST")
-    parser.add_argument("--reference", type=int, default=1)
+    parser.add_argument("--save_dir", type=str, default="DDPG_TEST", help="Save directory name in ./data/save_dir")
+    parser.add_argument("--reference", type=int, default=1, help="Reference Environment. Either 1 or 2")
     args = parser.parse_args()
     project_dir = "./data/" + args.save_dir
     if args.reference == 1:
