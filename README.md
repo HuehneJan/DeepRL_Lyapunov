@@ -5,3 +5,4 @@
   1. Install the required packages with a package installer before you continue
 * Code ist split in ![Linear](./Linear) and ![Nonlinear](./Nonlinear) analysis
   1. Instructions to run the specific code can be found [here](./Linear/README.md) and [here](./Linear/README.md)
+* Additionally,  the ![matlab](./matlab) contains a matlab script that calculated the reference LQR values for both linear systems and the linearized nonlinear system
